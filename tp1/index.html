@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabajo Práctico 1</title>
+  </head>
+  
+  <body>
+    <header>
+      <h1>Trabajo Práctico 1</h1>
+      <nav>
+        <ul>
+          <li><a href="#estructura-basica">Estructura</a></li>
+          <li><a href="#multimedia">Multimedia</a></li>
+          <li><a href="#form">Formulario</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2 id="estructura-basica">1. Estructura Básica del documento HTML</h2>
+        <p>
+          Este es un documento HTML, tiene una estructura básica que incluye la
+          declaracion de DOCTYPE, etiquetas de metadatos y un título.
+        </p>
+      </section>
+      <section>
+        <h2>2. Encabezados y propiedades de texto</h2>
+        <p style="font-weight: bold">Esto es un parrafo en negrita</p>
+        <h1>Esto Encabezado h1</h1>
+        <h2>Esto Encabezado h2</h2>
+        <h3 style="text-decoration: underline">Esto es un parrafo subrayado h3</h3>
+        <h4>Encabezado h4</h4>
+        <h5><em>Esto es un parrafo en cursiva h5</em></h5>
+        <h6>Encabezado h6</h6>
+        <h2>3. Divisiones y Agrupacion de contenido</h2>
+        <div>
+          <h3>Sección 1</h3>
+          <p>Contenido de la primera seccion agrupada en un div</p>
+        </div>
+        <div>
+          <h3>Sección 2</h3>
+          <p>Contenido de la segunda seccion agrupada en un div</p>
+        </div>
+      </section>
+      <section>
+        <h2>4. Enlaces y Listas</h2>
+      <div>
+        Visita nuestro
+        <a href="https://enzosoliz-portfolio.netlify.app/" target="_blank"
+          >sitio web</a
+        >
+        para mas información
+      </div>
+      <div>
+        <p>Enlaces Internos:</p>
+        <ul>
+          <li><a href="#estructura-basica">Ir a Estructura</a></li>
+          <li><a href="#multimedia">Ir a Multimedia</a></li>
+          <li><a href="#form">Ir a Formulario</a></li>
+        </ul>
+      </div>
+      <div>
+        <p>Lista Desordenada</p>
+        <ul>
+          <li>Primer item de una lista Desordenada</li>
+          <li>Segundo item de una lista Desordenada</li>
+        </ul>
+      </div>
+      <div>
+        <p>Lista Ordenada</p>
+        <ol>
+          <li>Primer item de una lista Ordenada</li>
+          <li>Segundo item de una lista Ordenada</li>
+        </ol>
+      </div>
+      </section>
+      <section>
+        <h2 id="multimedia">5. Elementos Multimedia</h2>
+      <div id="multimedia">
+        <h3>Imagen</h3>
+        <img
+          style="width: 500px"
+          src="https://assets.goal.com/images/v3/blt7b68ca019f93e8c3/7e3494d03fc9c3011a62627dc895b0098e35c349.jpg?auto=webp&format=pjpg&width=3840&quality=60"
+          alt="9-12-18"
+        />
+        <h3>Video</h3>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/F-A_ujDnMo4?si=xNbutbT7UZLiuaj7"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <h3>Audio</h3>
+        <audio src="https://download.blender.org/peach/trailer/trailer_1080p.ogg" controls/>
+      </div>
+      </section>
+      <section>
+        <h2>6. Tablas</h2>
+      <div>
+        <table style="border: black 1px solid;">
+          <tr s>
+            <th>Columna 1</th>
+            <th>Columna 2</th>
+          </tr>
+          <tr>
+            <td>dato 1</td>
+            <td>dato 2</td>
+          </tr>
+          <tr>
+            <td>dato 3</td>
+            <td>dato 4</td>
+          </tr>
+        </table>
+      </div>
+      </section>
+      <section>
+        <h2 id="form">7. Formularios</h2>
+        <form action="#" method="post">
+          <fieldset style="display: flex; justify-content: center;">
+          <div>
+            <label for="name">Nombre</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Escriba su nombre"
+            />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Escriba su email"
+            />
+          </div>
+          <div>
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="">Escriba su consulta</textarea>
+          </div>
+          <button type="button">Enviar</button>
+        </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright © 2022 Enzo Soliz legajo 45371</p>
+    </footer>
+    
+  </body>
+</html>
