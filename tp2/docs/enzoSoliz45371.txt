@@ -1,0 +1,5 @@
+Nombre: Enzo Soliz
+Legajo: 45371
+
+Repositorio en gibhub:
+https://github.com/EnzoSz/tps-desarrolloSoftware/tree/main/tp2
