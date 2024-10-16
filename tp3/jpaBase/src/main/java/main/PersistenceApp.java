@@ -15,18 +15,23 @@ public class PersistenceApp {
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
         try {
-            entityManager.getTransaction().begin();
+            entityManager.getTransaction().begin(); //inicia la transaccion
 
-            Factura factura =  Factura.builder()
-                    .numero(12)
-                    .total(5555)
-                    .build();
-            entityManager.persist(factura);
+            //Crea una factura
+//            Factura factura =  Factura.builder()
+//                    .numero(12)
+//                    .total(5555)
+//                    .build();
+//            entityManager.persist(factura); //persistimos en la bases de datos la factura
+            entityManager.flush();
 
             entityManager.getTransaction().commit();
         } catch (Exception e) {
             // TODO: handle exception
-
+            entityManager.getTransaction().rollback();
         }
+
+        entityManager.close();
+        entityManagerFactory.close();
     }
 }

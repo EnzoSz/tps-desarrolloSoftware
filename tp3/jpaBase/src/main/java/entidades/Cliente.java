@@ -1,5 +1,6 @@
 package entidades;
 
+import java.io.Serial;
 import java.io.Serializable;
 
 import javax.persistence.Column;
@@ -24,7 +25,8 @@ import lombok.*;
 @Entity // Va a ser una entidad y se va a guardar en la db
 @Table(name = "clientes")
 public class Cliente implements Serializable {
-
+    @Serial
+    private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
