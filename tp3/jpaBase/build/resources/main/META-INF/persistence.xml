@@ -5,6 +5,12 @@
              version="2.2">
     <persistence-unit name="Persistencia_JPA" transaction-type="RESOURCE_LOCAL">
         <class>entidades.Factura</class>
+        <class>entidades.Cliente</class>
+        <class>entidades.Articulo</class>
+        <class>entidades.DetalleFactura</class>
+        <class>entidades.Domicilio</class>
+        <class>entidades.Categoria</class>
+
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/db_desarrollo"/>
@@ -13,7 +19,7 @@
             <!-- config Hibernate -->
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
             <property name="hibernate.show_sql" value="true"/>
-            <property name="hibernate.hbm2ddl.auto" value="create"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
         </properties>
     </persistence-unit>
 </persistence>

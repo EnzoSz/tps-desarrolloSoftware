@@ -3,12 +3,7 @@ package entidades;
 import java.io.Serial;
 import java.io.Serializable;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 // Import Lombock
 import lombok.*;
@@ -39,6 +34,10 @@ public class Cliente implements Serializable {
 
     @Column(name = "dni", unique = true)
     private int dni;
+
+    @OneToOne(cascade = CascadeType.ALL) //Si elimino un cliente tambien se eliminara el domicilio
+    @JoinColumn(name = "fk_domicilio")
+    private Domicilio domicilio;
 
 
 
